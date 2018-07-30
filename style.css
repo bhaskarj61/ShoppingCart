@@ -1,0 +1,128 @@
+#searchResult {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-top: 10px;
+    width:100%;
+}
+#searchResult td, #searchResult th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#searchResult tr:nth-child(even){background-color: #f2f2f2;}
+
+#searchResult tr:hover {background-color: #ddd;}
+
+#searchResult th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+#billResult th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+#searchButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 2px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#addToCartButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#checkOutButton{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float: right;
+
+}
+#resetButton {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 32px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#searchContent{
+    width:60%;
+    height:100%;
+    float: left;
+}
+#showCart{
+    width:40%;
+    height:100%;
+    float: right;
+}
+
+#tableCart {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 55px;
+    width:100%;
+}
+#tableCart td, #tablleCart th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tableCart tr:nth-child(even){background-color: #f2f2f2;}
+
+#tableCart tr:hover {background-color: #ddd;}
+
+#tablecart th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}
+
+#totalBill {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-top: 10px;
+    width:100%;
+    
+}
+#totalBill td, #totalBill th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#totalBill tr:nth-child(even){background-color: #f2f2f2;}
+
+#totalBill tr:hover {background-color: #ddd;}
+
+#totalBill th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+}

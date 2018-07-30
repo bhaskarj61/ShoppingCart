@@ -1,0 +1,54 @@
+<html>
+
+<head>
+    <title>
+        Shopping Cart
+    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="shoppingScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="searchContent">
+            <center>
+                <h1>
+                    <u> Dlf city grocery</u>
+                </h1>
+            </center>
+            <input type="text" id="inputContent" placeholder="search items" />
+
+            <button id="searchButton" onClick="showContent()">Search</button>
+            <br/>
+
+            <table id="searchResult">
+            </table>
+            <br/>
+
+            <button id="addToCartButton" onclick="cart()">Add to Cart</button>
+
+            <button id="resetButton" onclick="resetCart()">Reset</button>
+        </div>
+        <div id="showCart">
+            <table id="tableCart">
+                <h1>
+                    <center>
+                        <u>
+                            Your Cart
+                        </u>
+                    </center>
+                </h1>
+            </table>
+
+            <br/>
+            <button id="checkOutButton" onclick="checkOut()">CheckOut</button>
+            <br/>
+            <table id="totalBill">
+
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
