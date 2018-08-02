@@ -54,7 +54,7 @@ obj = [{
 
 
 function showContent() {
-    $("table").show();
+    //document.getElementById("searchResult").innerHTML = "";
     inputValue = document.getElementById("inputContent").value; //getting input value
     console.log(inputValue);
 
@@ -96,11 +96,11 @@ function showContent() {
             txtQuantityData = document.createElement("Input");
             txtQuantityData.setAttribute("type", "number");
             txtQuantityData.setAttribute("value", "0");
-            txtQuantityData.setAttribute("id", "inputQuantity");
+            txtQuantityData.setAttribute("id", item.Name);
 
             txtQuantityData.addEventListener('change', () => {
                 // update Quantity here
-                item.Quantity = document.getElementById("inputQuantity").value;
+                item.Quantity = document.getElementById(item.Name).value;
                 console.log("quantity value" + item.Quantity);
             });
 
@@ -116,8 +116,7 @@ function showContent() {
             trSecond.appendChild(tdMRP);
             trSecond.appendChild(tdQuantity);
             document.getElementById("searchResult").appendChild(trSecond);
-        }
-        else {
+        } else {
             console.log("Not found");
         }
     });
@@ -126,6 +125,7 @@ function showContent() {
 }
 
 function cart() {
+
     console.log("inside cart");
 
     //creating table heading after pressing add to cart
@@ -172,8 +172,7 @@ function cart() {
 
 
 
-        }
-        else {
+        } else {
             console.log("Not found");
         }
 
@@ -181,6 +180,7 @@ function cart() {
 }
 
 function checkOut() {
+    var total = 0;
     //creating table heading 
     billTr = document.createElement("tr");
     billNameTh = document.createElement("th");
@@ -233,13 +233,16 @@ function checkOut() {
             billTr2.appendChild(billTd4);
             document.getElementById("totalBill").appendChild(billTr2);
 
+            total += (item.Quantity*item.MRP);//total bill is calculated here
 
-        }
-        else {
+
+        } else {
             console.log("Not found");
         }
 
+
     });
+        document.getElementById("billText").innerHTML= total;
 
 
 }
@@ -250,6 +253,3 @@ function resetCart() {
     document.getElementById("searchResult").innerHTML = "";
     alert("Data will reset.Do you agree?");
 }
-
-
-
